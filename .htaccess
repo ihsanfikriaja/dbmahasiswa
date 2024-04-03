@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteRule ^ihsanfikri/$ /ihsanfikri/form_login.php [L]
+
+RewriteEngine On
+
+RewriteRule ^$ /form_login.php [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /form_login.php [L]
+
